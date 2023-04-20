@@ -1,5 +1,6 @@
 const signupModel = require('../Models/signupModel');
 // const twilio = require('twilio');
+const JWT = require('jsonwebtoken');
 const meraotp = Math.floor(100000 + Math.random() * 900000);
 
 exports.usersignup = async(req, res) => {
@@ -23,6 +24,7 @@ exports.usersignup = async(req, res) => {
      
     if(req.body.otp==user.otp){
       res.status(200).send("verified")
+      res.status(200).send("success")
     }
     else{
       res.status(400).send("not verified")
