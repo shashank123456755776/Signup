@@ -16,6 +16,7 @@ function postrequest(){
     // Routes.post("/login",uservalid.loginCheck() ,ValidatorResult,userlogin)
     Routes.post("/signup",userValid.signupcheck(),ValidatorResult,usersignup)
     Routes.post("/verify" , myVerify)//this routes mainly use to verify the otp visist in mongodb
+    
 }
    
 
