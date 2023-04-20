@@ -1,0 +1,24 @@
+{
+  "name": "kloudracback",
+  "version": "1.0.0",
+  "description": "node",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Radheshyam",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "mongodb": "^5.2.0",
+    "mongoose": "^7.0.4",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.22",
+    "twilio": "^4.10.0"
+  }
+}
